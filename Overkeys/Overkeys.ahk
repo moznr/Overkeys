@@ -13,12 +13,13 @@ ADHD := New ADHDLib
 ADHD.config_limit_app("Overwatch")
 
 ; GUI size
-ADHD.config_size(381,790)
+ADHD.config_size(381,800)
 
 ADHD.config_ignore_x64_warning()
 
 
 ; Defines your hotkeys
+ADHD.config_hotkey_add({uiname: "Doomfist", subroutine: "Doomfist"})
 ADHD.config_hotkey_add({uiname: "Genji", subroutine: "Genji"})
 ADHD.config_hotkey_add({uiname: "McCree", subroutine: "McCree"})
 ADHD.config_hotkey_add({uiname: "Pharah", subroutine: "Pharah"})
@@ -67,26 +68,29 @@ return
 ;	Offense
 ; ==========================================================================================
 
+Doomfist:
+	ExecuteClick(140, 885)
+	return
 Genji:
-	ExecuteClick(165, 885)
+	ExecuteClick(200, 885)
 	return
 McCree:
-	ExecuteClick(225, 885)
+	ExecuteClick(260, 885)
 	return
 Pharah:
-	ExecuteClick(290, 885)
+	ExecuteClick(320, 885)
 	return	
 Reaper:
-	ExecuteClick(355, 885)
+	ExecuteClick(380, 885)
 	return
 Soldier76:
-	ExecuteClick(420, 885)
+	ExecuteClick(440, 885)
 	return
 Sombra:
-	ExecuteClick(485, 885)
+	ExecuteClick(505, 885)
 	return
 Tracer:
-	ExecuteClick(550, 885)
+	ExecuteClick(560, 885)
 	return
 	
 ; ==========================================================================================
@@ -94,22 +98,22 @@ Tracer:
 ; ==========================================================================================
 	
 Bastion:
-	ExecuteClick(665, 885)
+	ExecuteClick(690, 885)
 	return
 Hanzo:
-	ExecuteClick(725, 885)
+	ExecuteClick(760, 885)
 	return
 Junkrat:
-	ExecuteClick(790, 885)
+	ExecuteClick(820, 885)
 	return
 Mei:
-	ExecuteClick(855, 885)
+	ExecuteClick(870, 885)
 	return
 Torbjörn:
-	ExecuteClick(920, 885)
+	ExecuteClick(940, 885)
 	return
 Widowmaker:
-	ExecuteClick(985, 885)
+	ExecuteClick(1000, 885)
 	return
 
 ; ==========================================================================================
@@ -117,22 +121,22 @@ Widowmaker:
 ; ==========================================================================================
 	
 D.VA:
-	ExecuteClick(1105, 885)
+	ExecuteClick(1130, 885)
 	return
 Orisa:
-	ExecuteClick(1165, 885)
+	ExecuteClick(1200, 885)
 	return
 Reinhardt:
-	ExecuteClick(1230, 885)
+	ExecuteClick(1250, 885)
 	return
 Roadhog:
-	ExecuteClick(1295, 885)
+	ExecuteClick(1310, 885)
 	return
 Winston:
-	ExecuteClick(1360, 885)
+	ExecuteClick(1375, 885)
 	return
 Zarya:
-	ExecuteClick(1425, 885)
+	ExecuteClick(1440, 885)
 	return
 	
 ; ==========================================================================================
@@ -140,19 +144,19 @@ Zarya:
 ; ==========================================================================================
 	
 Ana:
-	ExecuteClick(1535, 885)
+	ExecuteClick(1560, 885)
 	return
 Lúcio:
-	ExecuteClick(1595, 885)
+	ExecuteClick(1620, 885)
 	return
 Mercy:
-	ExecuteClick(1655, 885)
+	ExecuteClick(1690, 885)
 	return
 Symmetra:
-	ExecuteClick(1715, 885)
+	ExecuteClick(1745, 885)
 	return
 Zenyatta:
-	ExecuteClick(1775, 885)
+	ExecuteClick(1805, 885)
 	return
 
 
