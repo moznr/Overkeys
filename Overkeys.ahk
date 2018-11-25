@@ -13,36 +13,40 @@ ADHD := New ADHDLib
 ADHD.config_limit_app("Overwatch")
 
 ; GUI size
-ADHD.config_size(381,800)
+ADHD.config_size(381,940)
 
 ADHD.config_ignore_x64_warning()
 
 
 ; Defines your hotkeys
-ADHD.config_hotkey_add({uiname: "Doomfist", subroutine: "Doomfist"})
-ADHD.config_hotkey_add({uiname: "Genji", subroutine: "Genji"})
-ADHD.config_hotkey_add({uiname: "McCree", subroutine: "McCree"})
-ADHD.config_hotkey_add({uiname: "Pharah", subroutine: "Pharah"})
-ADHD.config_hotkey_add({uiname: "Reaper", subroutine: "Reaper"})
-ADHD.config_hotkey_add({uiname: "Soldier: 76", subroutine: "Soldier76"})
-ADHD.config_hotkey_add({uiname: "Sombra", subroutine: "Sombra"})
-ADHD.config_hotkey_add({uiname: "Tracer", subroutine: "Tracer"})
-ADHD.config_hotkey_add({uiname: "Bastion", subroutine: "Bastion"})
-ADHD.config_hotkey_add({uiname: "Hanzo", subroutine: "Hanzo"})
-ADHD.config_hotkey_add({uiname: "Junkrat", subroutine: "Junkrat"})
-ADHD.config_hotkey_add({uiname: "Mei", subroutine: "Mei"})
-ADHD.config_hotkey_add({uiname: "Torbjörn", subroutine: "Torbjörn"})
-ADHD.config_hotkey_add({uiname: "Widowmaker", subroutine: "Widowmaker"})
 ADHD.config_hotkey_add({uiname: "D.VA", subroutine: "D.VA"})
 ADHD.config_hotkey_add({uiname: "Orisa", subroutine: "Orisa"})
 ADHD.config_hotkey_add({uiname: "Reinhardt", subroutine: "Reinhardt"})
 ADHD.config_hotkey_add({uiname: "Roadhog", subroutine: "Roadhog"})
 ADHD.config_hotkey_add({uiname: "Winston", subroutine: "Winston"})
+ADHD.config_hotkey_add({uiname: "Wrecking Ball", subroutine: "WreckingBall"})
 ADHD.config_hotkey_add({uiname: "Zarya", subroutine: "Zarya"})
+ADHD.config_hotkey_add({uiname: "Ashe", subroutine: "Ashe"})
+ADHD.config_hotkey_add({uiname: "Bastion", subroutine: "Bastion"})
+ADHD.config_hotkey_add({uiname: "Doomfist", subroutine: "Doomfist"})
+ADHD.config_hotkey_add({uiname: "Genji", subroutine: "Genji"})
+ADHD.config_hotkey_add({uiname: "Hanzo", subroutine: "Hanzo"})
+ADHD.config_hotkey_add({uiname: "Junkrat", subroutine: "Junkrat"})
+ADHD.config_hotkey_add({uiname: "McCree", subroutine: "McCree"})
+ADHD.config_hotkey_add({uiname: "Mei", subroutine: "Mei"})
+ADHD.config_hotkey_add({uiname: "Pharah", subroutine: "Pharah"})
+ADHD.config_hotkey_add({uiname: "Reaper", subroutine: "Reaper"})
+ADHD.config_hotkey_add({uiname: "Soldier: 76", subroutine: "Soldier76"})
+ADHD.config_hotkey_add({uiname: "Sombra", subroutine: "Sombra"})
+ADHD.config_hotkey_add({uiname: "Symmetra", subroutine: "Symmetra"})
+ADHD.config_hotkey_add({uiname: "Torbjörn", subroutine: "Torbjörn"})
+ADHD.config_hotkey_add({uiname: "Tracer", subroutine: "Tracer"})
+ADHD.config_hotkey_add({uiname: "Widowmaker", subroutine: "Widowmaker"})
 ADHD.config_hotkey_add({uiname: "Ana", subroutine: "Ana"})
+ADHD.config_hotkey_add({uiname: "Brigitte", subroutine: "Brigitte"})
 ADHD.config_hotkey_add({uiname: "Lúcio", subroutine: "Lúcio"})
 ADHD.config_hotkey_add({uiname: "Mercy", subroutine: "Mercy"})
-ADHD.config_hotkey_add({uiname: "Symmetra", subroutine: "Symmetra"})
+ADHD.config_hotkey_add({uiname: "Moira", subroutine: "Moira"})
 ADHD.config_hotkey_add({uiname: "Zenyatta", subroutine: "Zenyatta"})
 
 ; End Setup section
@@ -64,99 +68,112 @@ return
 
 ; This is where you define labels that the various bindings trigger
 ; Make sure you call them the same names as you set in the settings at the top of the file (eg Fire, FireRate)
-; ==========================================================================================
-;	Offense
-; ==========================================================================================
 
-Doomfist:
-	ExecuteClick(140, 885)
-	return
-Genji:
-	ExecuteClick(200, 885)
-	return
-McCree:
-	ExecuteClick(260, 885)
-	return
-Pharah:
-	ExecuteClick(320, 885)
-	return	
-Reaper:
-	ExecuteClick(380, 885)
-	return
-Soldier76:
-	ExecuteClick(440, 885)
-	return
-Sombra:
-	ExecuteClick(505, 885)
-	return
-Tracer:
-	ExecuteClick(560, 885)
-	return
-	
-; ==========================================================================================
-;	Defense
-; ==========================================================================================
-	
-Bastion:
-	ExecuteClick(690, 885)
-	return
-Hanzo:
-	ExecuteClick(760, 885)
-	return
-Junkrat:
-	ExecuteClick(820, 885)
-	return
-Mei:
-	ExecuteClick(870, 885)
-	return
-Torbjörn:
-	ExecuteClick(940, 885)
-	return
-Widowmaker:
-	ExecuteClick(1000, 885)
-	return
+
 
 ; ==========================================================================================
 ;	Tank
 ; ==========================================================================================
 	
 D.VA:
-	ExecuteClick(1130, 885)
+	ExecuteClick(120, 885)
 	return
 Orisa:
-	ExecuteClick(1200, 885)
+	ExecuteClick(180, 885)
 	return
 Reinhardt:
-	ExecuteClick(1250, 885)
+	ExecuteClick(240, 885)
 	return
 Roadhog:
-	ExecuteClick(1310, 885)
+	ExecuteClick(300, 885)
 	return
 Winston:
-	ExecuteClick(1375, 885)
+	ExecuteClick(360, 885)
+	return
+WreckingBall:
+	ExecuteClick(420, 885)
 	return
 Zarya:
-	ExecuteClick(1440, 885)
+	ExecuteClick(480, 885)
 	return
 	
+
+; ==========================================================================================
+;	Damage
+; ==========================================================================================
+
+
+Ashe:
+	ExecuteClick(560, 885)
+	return
+Bastion:
+	ExecuteClick(620, 885)
+	return	
+Doomfist:
+	ExecuteClick(680, 885)
+	return
+Genji:
+	ExecuteClick(740, 885)
+	return
+Hanzo:
+	ExecuteClick(800, 885)
+	return
+Junkrat:
+	ExecuteClick(860, 885)
+	return	
+McCree:
+	ExecuteClick(920, 885)
+	return
+Mei:
+	ExecuteClick(980, 885)
+	return	
+Pharah:
+	ExecuteClick(1040, 885)
+	return	
+Reaper:
+	ExecuteClick(1100, 885)
+	return
+Soldier76:
+	ExecuteClick(1160, 885)
+	return
+Sombra:
+	ExecuteClick(1220, 885)
+	return
+Symmetra:
+	ExecuteClick(1280, 885)
+	return	
+Torbjörn:
+	ExecuteClick(1340, 885)
+	return
+Tracer:
+	ExecuteClick(1400, 885)
+	return
+Widowmaker:
+	ExecuteClick(1460, 885)
+	return
+
+
 ; ==========================================================================================
 ;	Support
 ; ==========================================================================================
 	
 Ana:
-	ExecuteClick(1560, 885)
+	ExecuteClick(1540, 885)
+	return
+Brigitte:
+	ExecuteClick(1600, 885)
 	return
 Lúcio:
-	ExecuteClick(1620, 885)
+	ExecuteClick(1660, 885)
 	return
 Mercy:
-	ExecuteClick(1690, 885)
+	ExecuteClick(1720, 885)
 	return
-Symmetra:
-	ExecuteClick(1745, 885)
+Moira:
+	ExecuteClick(1780, 885)
 	return
 Zenyatta:
-	ExecuteClick(1805, 885)
+	ExecuteClick(1840, 885)
 	return
 
 
